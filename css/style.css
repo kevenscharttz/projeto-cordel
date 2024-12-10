@@ -1,1 +1,90 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: Wonderful;
+    src: url('../fonts/fonte001/WonderfulChristmas_PERSONAL_USE_ONLY.otf') format(opentype);
+}
+
+:root {
+    --fonte-titulo: 'Wonderful';
+    --fonte-corpo: 'Poppins';
+    --cor0: #262626;
+    --cor1: #D9D2BF;
+    --cor2: #D9BB62;
+    --cor3: #8C7C68;
+    --cor4: #A6845B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: var(--cor3);
+    color: #262626;
+    font-family: var(--fonte-corpo);
+}
+
+header {
+    background-color: #262626;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--fonte-titulo);
+    color: var(--cor1);
+    font-size: 70px;
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+
+header > p {
+    color: var(--cor1);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.fundo {
+    background-color: aqua;
+
+}
+
+section.fundo p {
+    width: 400px;
+    background-color: hsla(0, 0%, 0%, 0.25);
+}
+
+footer {
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+    color: var(--cor1);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
